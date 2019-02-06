@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(menuName="#SCRIPTNAME#",fileName="New #SCRIPTNAME#",order=0)]
+public class  #SCRIPTNAME# : ScriptableObject
+{
+    void Awake()
+    {
+        #NOTRIM#
+    }
+    
+    void OnDestroy()
+    {
+        #NOTRIM#
+    }
+}

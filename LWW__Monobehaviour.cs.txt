@@ -1,0 +1,30 @@
+﻿#define DEBUG_LOG
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class  #SCRIPTNAME# : MonoBehaviour 
+{
+	void Start () 
+	{
+		#NOTRIM#
+	}
+	
+	void Update () 
+	{
+		#NOTRIM#
+	}
+
+	void OnDestroy ()
+	{
+		#NOTRIM#
+	}
+
+	private void LogFormat(string fmt, params object[] args)
+	{
+#if DEBUG_LOG
+		Debug.LogFormat(fmt, args);
+#endif
+	}
+}
